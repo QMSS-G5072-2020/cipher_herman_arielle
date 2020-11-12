@@ -23,10 +23,7 @@ def cipher(text, shift, encrypt=True):
         >>> cipher(text, shift, encrypt=True)
         'gpp cbs'
         """
-        
-    # add assert statement
-    assert not isinstance(shift, str), 'please enter numeric value for shift'
-    
+         
     alphabet = 'abcdefghijklmnopqrstuvwyzABCDEFGHIJKLMNOPQRSTUVWYZ'
     new_text = ''
     for c in text:

@@ -1,29 +1,26 @@
 def cipher(text, shift, encrypt=True):
-        """ 
-        Encrypts and decrypts text.
+    """ 
+    Encrypts and decrypts text.
         
-        Parameters
-        __________
-        text: text string to be encrypted or decrypted.
-            A text string, which can be a word or a phrase.
-        shift: the number of letters each letter of the text string is shifted along the alphabet.
-            A postive or negative integer.
-        encrypt: Boolean which selects to encrypt (True) or decrypt (False).
-            True or False
+    Parameters
+    __________
+    text: text string to be encrypted or decrypted.
+    shift: the number of letters each letter of the text string is shifted along the alphabet.
+    encrypt: Boolean which selects to encrypt (True) or decrypt (False).
+    True or False
         
-        Returns
-        --------
-        A text string
+    Returns
+    --------
+    A text string
 
-        Examples
-        ---------
-        >>> from cipher_aeh2196 import cipher_aeh2196
-        >>> text = "foo bar"
-        >>> shift = 1
-        >>> cipher(text, shift, encrypt=True)
-        'gpp cbs'
-        """
-         
+    Examples
+    ---------
+    >>> from cipher_aeh2196 import cipher_aeh2196
+    >>> text = "foo bar"
+    >>> shift = 1
+    >>> cipher(text, shift, encrypt=True)
+    'gpp cbs'
+    """
     alphabet = 'abcdefghijklmnopqrstuvwyzABCDEFGHIJKLMNOPQRSTUVWYZ'
     new_text = ''
     for c in text:
